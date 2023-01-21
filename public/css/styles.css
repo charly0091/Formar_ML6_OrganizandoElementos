@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+/*Variables*/
+:root {
+    /* Variables de colores */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a; 
+    /* Fuentes */
+    --fuente: 'Roboto', sans-serif;
+    /* Tamaños tipográficos */
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 16px;
+}
+
+/* Estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+p{
+    font-size: var(--parrafos);
+}
+
+body{
+    background-color: var(--gris-claro);
+}
+
+
+/* Estilos del Header */
+
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0 5px 0;
+}
+
+header div.logo_contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+header div.logo {
+    padding: 5px;
+    width: 50%;
+}
+
+header div.busqueda {
+    width: 50%;
+    padding: 5px;
+    position: relative;
+    height: auto;
+}
+
+header div.busqueda input{
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 35px;
+    width: 100%;
+}
+
+header div.busqueda button{
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    padding: 5px 4px;
+    background-color: white;
+    border: none;
+    color: var(--gris-oscuro);
+}
+
+header p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header nav ul.lista-superior{
+    margin-bottom: 15px;
+}
+
+header nav ul li a{
+    font-size: var(--parrafos);
+}
+
+header div.burger-menu{
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    width: 15px;
+    padding: 10px;
+    margin: 25px auto 0;
+}
+
+.navbar {
+    display: none;
+}
+
+header div.logo_contenedor p{
+    display: none;
+}
+
+/* Estilos de secciones */
+
+main home__productos {
+    width: 100%;
+}
+main section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main section h4 {
+    font-size: var(--titulos);
+    color: var(--gris-oscuro);
+    margin-bottom: 20px;
+}
+
+main section div.contenedor__productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main.home__productos article.seccion__productos--tarjeta {
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+main.home__productos article.seccion__productos--tarjeta:hover{
+    box-shadow: 5px 5px 10px rgb(100, 100, 100);
+
+}
+
+main section article img {
+    width: 100%;
+    height: 300px;
+}
+
+main article div.caja_logo{
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+
+}
+
+main article div.producto_precio{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+main article div.caja_logo p.verde{
+    color: var(--verde);
+}
+
+main article div.caja_logo i:hover {
+    transform: rotateZ(-90deg);
+    transition: all 2s ease;
+}
+
+main article div.caja_logo p.precio{
+    width: 30%;
+    font-size: var(--precio);
+}
+
+main article div.caja_logo p.descuento{
+    width: 70%;
+    font-size: var(--descuento);
+    margin-left: 10px;
+    color: var(--verde);
+}
+
+main section article h5 {
+    font-size: var(--descripcion);
+    color: var(--gris-oscuro);
+}
+
+
+
+div i.fa-truck{
+    border: 1px solid var(--verde);
+    border-radius: 100%;
+    padding: 5px;
+    color: var(--verde);
+    margin-bottom: 10px;
+    position: absolute;
+    
+}
+
+.descripcion {
+    display: none;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+
+/* Estilos de footer */
+
+footer{
+    background-color: white;
+    padding: 50px 10px 10px;
+}
+
+footer article{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+footer article i{
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer section article i:hover {
+    color: var(--amarillo);
+}
+
+/* queries */
+
+@media screen and (min-width: 361px) {
+    main section article:hover > div.caja_logo > h5 {
+        display: block;
+    }
+
+    .navbar {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    header div.logo_contenedor div.logo {
+        max-width: 250px;
+  }
+  header div.logo_contenedor div.busqueda {
+        width: 40%;
+  }
+  header div.logo_contenedor p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  header div.burger-menu {
+        display: none;
+  }
+  header nav {
+        display: flex;
+        justify-content: space-between;
+  }
+  header nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+  }
+  header nav ul li {
+        margin: 5px;
+  }
+    main section article:hover > div.caja_logo > h5 {
+        display: block;
+    }
+    main.home__productos article.seccion__productos--tarjeta {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .navbar {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    header div.logo_contenedor p{
+        display: block;
+    }
+    header nav ul.lista-superior{
+        margin-bottom: 0;
+    }
+
+    footer section {
+        display: flex;
+    }
+}
