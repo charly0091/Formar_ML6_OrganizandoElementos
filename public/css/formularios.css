@@ -1,5 +1,12 @@
 @import url(styles.css);
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60vh;
+}
+
 .register-form {
     width: 90%;
     margin: 0 auto;
