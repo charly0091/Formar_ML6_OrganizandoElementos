@@ -181,6 +181,10 @@ main article div.caja_logo p.verde{
     color: var(--verde);
 }
 
+main article div.caja_logo i{
+    transition: all 2s ease;
+}
+
 main article div.caja_logo i:hover {
     transform: rotateZ(-90deg);
     transition: all 2s ease;
@@ -298,6 +302,7 @@ footer section article i:hover {
   }
     main section article:hover > div.caja_logo > h5 {
         display: block;
+        
     }
     
     .navbar {
