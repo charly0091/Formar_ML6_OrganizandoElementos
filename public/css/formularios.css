@@ -1,17 +1,21 @@
 @import url(styles.css);
-
-main{
+body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60vh;
-}
+    min-height: 100vh;
+    
+} 
 
 .register-form {
     width: 90%;
     margin: 0 auto;
     padding: 15px;
     max-width: 500px;
+}
+
+input.control{
+    padding: 5px 10px;
 }
 
 .register-form .control-form {
@@ -27,8 +31,8 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.register-form .control-form .perfil div input {
-    margin-right: 20px;
+.register-form .control-form .perfil div label {
+    margin-left: 20px;
 }
 .button-form {
     width: 100%;
@@ -38,8 +42,16 @@ main{
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+    margin-top: 25px;
 }
 
 .button-form:hover {
     background-color: #0022aa;
+}
+
+span{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
 }
