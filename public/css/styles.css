@@ -108,9 +108,12 @@ header div.burger-menu{
     background-color: var(--celeste);
     border-radius: 5px;
     color: white;
-    width: 15px;
-    padding: 10px;
-    margin: 25px auto 0;
+    width: 35px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
 }
 
 .navbar {
