@@ -34,15 +34,27 @@ input.control{
 .register-form .control-form .perfil div label {
     margin-left: 20px;
 }
-.button-form {
-    width: 100%;
+.btn_ctn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.button-form{
     background-color: var(--celeste);
     border: none;
-    height: 30px;
+    font-size: 20px;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    margin-top: 25px;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 140px;
+}
+
+.button-form a {
+    color: white    ;
 }
 
 .button-form:hover {
