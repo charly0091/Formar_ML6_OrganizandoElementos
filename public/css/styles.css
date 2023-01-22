@@ -300,7 +300,7 @@ footer section article i:hover {
   header nav ul li {
         margin: 5px;
   }
-    main section article:hover > div.caja_logo > h5 {
+    main section article div.caja_logo div.desc-cont{
         display: block;
         
     }
